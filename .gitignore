@@ -1,0 +1,51 @@
+# Keil MDK build outputs & user settings
+*.uvguix.*
+*.uvoptx
+*.crf
+*.d
+*.o
+*.dep
+*.htm
+*.map
+*.axf
+*.lst
+*.lnp
+*.iex
+*.bin
+*.hex
+*.elf
+*.sct
+*.administrators
+JLinkLog.txt
+JLinkSettings.ini
+
+# Keil build directories
+**/MDK-ARM/*/
+**/MDK-ARM/*.build_log.htm
+**/RTE/
+
+# Python cache & temporary files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary & personal files
+resume-preview-1.jpg
+tmp/
+
+# Laser-plasma simulation scripts & preview
+analyze_forward_proton_tail.py
+rebuild_forward_proton_full_extent.py
+render_*.py
+smilei_lplg_3d_moving_window.py
+combo_3x2_tau380_preview.png
+
+# Editor & OS files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.bak
+*.tmp

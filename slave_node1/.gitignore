@@ -1,0 +1,37 @@
+# Keil MDK build outputs
+*.uvguix.*
+*.crf
+*.d
+*.o
+*.dep
+*.htm
+*.map
+*.axf
+*.lst
+*.lnp
+*.iex
+*.bin
+*.hex
+*.elf
+*.sct
+*.administrators
+*.uvoptx
+JLinkLog.txt
+JLinkSettings.ini
+
+# Build directories
+MDK-ARM/*/
+MDK-ARM/*.build_log.htm
+RTE/
+
+# Editor / OS
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Misc
+*.bak
+*.tmp

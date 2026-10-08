@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' 'wasm-unsafe-eval' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src 'unsafe-inline' blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Can Three Node Runtime</title>
+<style>:root{color-scheme:light dark;background:light-dark(rgb(255 255 255), rgb(24 24 24))}html,body{margin:0}body{box-sizing:border-box;padding:1rem;background:inherit}iframe{display:block;width:100%;height:calc(100vh - 2rem);margin:0 auto;border:0}</style>
+</head>
+<body>
+<iframe sandbox="allow-scripts" referrerpolicy="no-referrer" title="Can Three Node Runtime" srcdoc="&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Security-Policy&quot; content=&quot;default-src &#x27;none&#x27;; script-src &#x27;unsafe-inline&#x27; &#x27;unsafe-eval&#x27; &#x27;wasm-unsafe-eval&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; style-src &#x27;unsafe-inline&#x27; blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; img-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; font-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; media-src blob: data: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://esm.sh https://fonts.bunny.net https://fonts.googleapis.com https://fonts.gstatic.com https://unpkg.com; worker-src blob:; connect-src blob: data:; frame-src &#x27;none&#x27;; object-src &#x27;none&#x27;; base-uri &#x27;none&#x27;; form-action &#x27;none&#x27;&quot;&gt;
+&lt;title&gt;Can Three Node Runtime&lt;/title&gt;
+&lt;style&gt;:root {
+  color-scheme: light dark;
+  background-color: var(
+    --background,
+    var(--color-background-primary, light-dark(rgb(255 255 255), rgb(24 24 24)))
+  ) !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --color-background-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --card: color-mix(in oklab, var(--foreground) 5%, var(--background));
+  --card-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --popover: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255), rgb(45 45 45))
+  );
+  --popover-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --primary: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --primary-foreground: var(
+    --color-text-inverse,
+    light-dark(rgb(255 255 255), rgb(13 13 13))
+  );
+  --secondary: var(
+    --color-background-secondary,
+    light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%))
+  );
+  --secondary-foreground: var(
+    --color-text-primary,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: var(
+    --color-text-secondary,
+    light-dark(rgb(26 28 31 / 49.4%), rgb(255 255 255 / 49.8%))
+  );
+  --accent: var(
+    --color-background-info,
+    light-dark(rgb(229 242 255), rgb(13 39 63))
+  );
+  --accent-foreground: var(
+    --color-text-info,
+    light-dark(rgb(51 156 255), rgb(131 195 255))
+  );
+  --destructive: var(
+    --color-text-warning,
+    light-dark(rgb(226 85 7), rgb(255 133 73))
+  );
+  --border: var(
+    --color-border-secondary,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+  --input: var(
+    --color-border-primary,
+    light-dark(
+      rgb(26 28 31 / 11.8%),
+      color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+    )
+  );
+  --ring: var(
+    --color-ring-primary,
+    light-dark(rgb(51 156 255), rgb(131 195 255 / 76%))
+  );
+  --font-size-base: var(--font-text-md-size, 14px);
+  --blue: light-dark(rgb(51 156 255), rgb(51 156 255));
+  --orange: light-dark(rgb(226 85 7), rgb(251 106 34));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+  --red: light-dark(rgb(224 46 42), rgb(255 103 100));
+  --purple: light-dark(rgb(146 79 247), rgb(173 123 249));
+  --yellow: light-dark(rgb(255 195 0), rgb(255 210 64));
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(rgb(243 136 59), rgb(245 154 86));
+  --viz-series-3: light-dark(rgb(93 201 119), rgb(116 213 139));
+  --viz-series-4: light-dark(rgb(235 119 177), rgb(240 143 192));
+  --viz-series-5: light-dark(rgb(155 121 236), rgb(170 145 239));
+  --viz-series-6: light-dark(rgb(58 185 177), rgb(90 203 194));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, &quot;Segoe UI&quot;, sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, &quot;SF Mono&quot;, Menlo, Consolas, &quot;Liberation Mono&quot;,
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: var(--border-radius-lg, 12.5px);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; viewBox=&#x27;0 0 17 17&#x27;%3E%3Cpath d=&#x27;M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z&#x27;/%3E%3C/svg%3E&quot;);
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+}
+
+:root[data-theme=&quot;light&quot;] {
+  color-scheme: light;
+}
+
+:root[data-theme=&quot;dark&quot;] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html &gt; body {
+  /* Preserve MCP aliases for older inline renderers without creating :root cycles. */
+  --color-background-primary: var(
+    --background,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --color-text-primary: var(
+    --foreground,
+    light-dark(rgb(26 28 31), rgb(255 255 255))
+  );
+  --color-border-secondary: var(
+    --border,
+    light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%))
+  );
+
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans) !important;
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium, 500);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive &gt; .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align=&quot;right&quot;]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align=&quot;center&quot;]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  corner-shape: superellipse(1.5);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget &gt; :not(.card, .progress) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress {
+  display: flex;
+  height: 6px;
+  margin-block: calc((var(--line-height-normal, 1.5em) - 6px) / 2);
+  overflow: hidden;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+}
+
+.progress-bar {
+  height: 100%;
+  flex-shrink: 0;
+  border: 0;
+  background: var(--viz-series-1);
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls &gt; .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls &gt; .form-label &gt; :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--primary-foreground);
+  background: var(--foreground);
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(in srgb, var(--primary-foreground) 50%, transparent);
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type=&quot;file&quot;] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type=&quot;file&quot;]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type=&quot;file&quot;]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type=&quot;color&quot;] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type=&quot;color&quot;]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+  corner-shape: superellipse(1.5);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  corner-shape: superellipse(1.5);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  corner-shape: superellipse(1.5);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type=&quot;checkbox&quot;]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type=&quot;checkbox&quot;]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: &quot;&quot;;
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type=&quot;radio&quot;] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type=&quot;radio&quot;]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: &quot;&quot;;
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+  [aria-pressed=&quot;true&quot;],
+  [aria-selected=&quot;true&quot;],
+  .is-selected
+) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed=&quot;true&quot;], [aria-selected=&quot;true&quot;], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget &gt; svg {
+  width: 100%;
+}
+
+/* Model-authored chart rules can otherwise stretch icons after these styles load. */
+svg.lucide {
+  display: block;
+  width: 16px !important;
+  height: 16px !important;
+  flex: none;
+  margin: 0 !important;
+  stroke-width: 1.6;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+
+html&gt;body{padding:0}&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div id=&quot;can-runtime-visual&quot; aria-label=&quot;CAN 分布式传感器三个节点运行逻辑图&quot;&gt;
+  &lt;style&gt;
+    #can-runtime-visual { --ink:#e8eef7; --muted:#9eb0c8; --line:#40516a; --surface:#0c1422; --bus:#57c7ff; --master:#ffbf69; --s1:#7ee2a8; --s2:#d5a5ff; --alarm:#ff7777; color:var(--ink); font-family:ui-sans-serif,system-ui,-apple-system,&quot;Segoe UI&quot;,sans-serif; font-size:14px; }
+    #can-runtime-visual .wrap { background:linear-gradient(145deg,#0a1220,#101b2c 70%,#12243a); border:1px solid #263a56; border-radius:14px; padding:18px; }
+    #can-runtime-visual h1 { font-size:22px; font-weight:500; margin:0 0 4px; letter-spacing:0; }
+    #can-runtime-visual .sub { color:var(--muted); margin:0 0 14px; }
+    #can-runtime-visual .tabs { display:flex; flex-wrap:wrap; gap:7px; margin:0 0 12px; }
+    #can-runtime-visual .tabs button { border:1px solid #334a67; border-radius:8px; background:#111d30; color:var(--muted); padding:7px 11px; cursor:pointer; font:inherit; }
+    #can-runtime-visual .tabs button[aria-selected=&quot;true&quot;] { color:#07121f; background:#8edbff; border-color:#8edbff; }
+    #can-runtime-visual .view { display:none; }
+    #can-runtime-visual .view.active { display:block; }
+    #can-runtime-visual svg { width:100%; height:auto; display:block; background:#09111d; border:1px solid #263a56; border-radius:10px; }
+    #can-runtime-visual .legend { display:flex; flex-wrap:wrap; gap:12px 18px; color:var(--muted); margin-top:10px; font-size:12px; }
+    #can-runtime-visual .legend span { display:inline-flex; align-items:center; gap:6px; }
+    #can-runtime-visual .sw { width:10px; height:10px; border-radius:50%; display:inline-block; }
+    #can-runtime-visual .hint { color:var(--muted); font-size:12px; margin-top:8px; }
+    #can-runtime-visual svg text { font-family:ui-monospace,SFMono-Regular,Consolas,&quot;Liberation Mono&quot;,monospace; fill:var(--ink); font-size:13px; }
+    #can-runtime-visual svg .small { font-size:11px; fill:var(--muted); }
+    #can-runtime-visual svg .title { font-size:17px; font-weight:500; }
+    #can-runtime-visual svg .lane { fill:#0d1725; stroke:#253851; stroke-width:1; }
+    #can-runtime-visual svg .node { stroke-width:1.4; }
+    #can-runtime-visual svg .boot { fill:#18263a; stroke:#7087a5; }
+    #can-runtime-visual svg .master { fill:#3b2b19; stroke:var(--master); }
+    #can-runtime-visual svg .slave1 { fill:#15372a; stroke:var(--s1); }
+    #can-runtime-visual svg .slave2 { fill:#302044; stroke:var(--s2); }
+    #can-runtime-visual svg .common { fill:#152b3c; stroke:var(--bus); }
+    #can-runtime-visual svg .alarm { fill:#3b1e25; stroke:var(--alarm); }
+    #can-runtime-visual svg .decision { fill:#382f1b; stroke:var(--master); }
+    #can-runtime-visual svg .arrow { stroke:#86a3c5; stroke-width:1.5; fill:none; marker-end:url(#arrow); }
+    #can-runtime-visual svg .arrow.bus { stroke:var(--bus); stroke-width:2.2; marker-end:url(#arrowBus); }
+    #can-runtime-visual svg .dash { stroke-dasharray:5 4; }
+    #can-runtime-visual svg .pill { fill:#102133; stroke:#3d5878; }
+    @media (max-width:560px) { #can-runtime-visual .wrap{padding:11px;} #can-runtime-visual h1{font-size:18px;} #can-runtime-visual svg text{font-size:11px;} #can-runtime-visual svg .small{font-size:9px;} }
+  &lt;/style&gt;
+  &lt;div class=&quot;wrap&quot;&gt;
+    &lt;h1&gt;CAN 分布式传感器：三个节点运行逻辑&lt;/h1&gt;
+    &lt;p class=&quot;sub&quot;&gt;基于源码调用关系绘制；实线是函数调用，蓝色粗线是 CAN 帧，虚线是 FreeRTOS 队列 / 通知。&lt;/p&gt;
+    &lt;div class=&quot;tabs&quot; role=&quot;tablist&quot; aria-label=&quot;节点视图&quot;&gt;
+      &lt;button type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;true&quot; data-view=&quot;overview&quot;&gt;系统总览&lt;/button&gt;
+      &lt;button type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-view=&quot;master&quot;&gt;Master 节点&lt;/button&gt;
+      &lt;button type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-view=&quot;slave1&quot;&gt;Slave 1 节点&lt;/button&gt;
+      &lt;button type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-view=&quot;slave2&quot;&gt;Slave 2 节点&lt;/button&gt;
+      &lt;button type=&quot;button&quot; role=&quot;tab&quot; aria-selected=&quot;false&quot; data-view=&quot;functions&quot;&gt;核心函数索引&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;section class=&quot;view active&quot; data-panel=&quot;overview&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 1120 690&quot; role=&quot;img&quot; aria-label=&quot;三个节点和 CAN 帧 ID 的系统总览&quot;&gt;
+        &lt;defs&gt;
+          &lt;marker id=&quot;arrow&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#86a3c5&quot;/&gt;&lt;/marker&gt;
+          &lt;marker id=&quot;arrowBus&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto-start-reverse&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#57c7ff&quot;/&gt;&lt;/marker&gt;
+        &lt;/defs&gt;
+        &lt;text x=&quot;28&quot; y=&quot;32&quot; class=&quot;title&quot;&gt;启动与通信主路径&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;52&quot; width=&quot;1064&quot; height=&quot;120&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;82&quot; width=&quot;154&quot; height=&quot;54&quot; rx=&quot;9&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;127&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot;&gt;main()&lt;/text&gt;&lt;text x=&quot;127&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;HAL_Init → SystemClock_Config&lt;/text&gt;
+        &lt;path d=&quot;M204 109 H250&quot; class=&quot;arrow&quot;/&gt;
+        &lt;rect x=&quot;250&quot; y=&quot;82&quot; width=&quot;190&quot; height=&quot;54&quot; rx=&quot;9&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;345&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot;&gt;MX_*_Init()&lt;/text&gt;&lt;text x=&quot;345&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;GPIO / DMA / UART / ADC / CAN&lt;/text&gt;
+        &lt;path d=&quot;M440 109 H486&quot; class=&quot;arrow&quot;/&gt;
+        &lt;rect x=&quot;486&quot; y=&quot;82&quot; width=&quot;200&quot; height=&quot;54&quot; rx=&quot;9&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;586&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot;&gt;CanRxQueue_Init()&lt;/text&gt;&lt;text x=&quot;586&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueCreate(16, CanRxFrame_t)&lt;/text&gt;
+        &lt;path d=&quot;M686 109 H732&quot; class=&quot;arrow&quot;/&gt;
+        &lt;rect x=&quot;732&quot; y=&quot;82&quot; width=&quot;160&quot; height=&quot;54&quot; rx=&quot;9&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;812&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot;&gt;CanBasic_Init()&lt;/text&gt;&lt;text x=&quot;812&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;过滤器 → Start → RX 通知&lt;/text&gt;
+        &lt;path d=&quot;M892 109 H938&quot; class=&quot;arrow&quot;/&gt;
+        &lt;rect x=&quot;938&quot; y=&quot;82&quot; width=&quot;130&quot; height=&quot;54&quot; rx=&quot;9&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;1003&quot; y=&quot;105&quot; text-anchor=&quot;middle&quot;&gt;sensor_start()&lt;/text&gt;&lt;text x=&quot;1003&quot; y=&quot;123&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;启动调度器&lt;/text&gt;
+
+        &lt;text x=&quot;28&quot; y=&quot;210&quot; class=&quot;title&quot;&gt;三个节点的角色、核心函数与 CAN ID&lt;/text&gt;
+        &lt;rect x=&quot;35&quot; y=&quot;238&quot; width=&quot;300&quot; height=&quot;220&quot; rx=&quot;12&quot; class=&quot;node master&quot;/&gt;
+        &lt;circle cx=&quot;68&quot; cy=&quot;274&quot; r=&quot;15&quot; fill=&quot;var(--master)&quot;/&gt;&lt;text x=&quot;68&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; fill=&quot;#111&quot;&gt;M&lt;/text&gt;&lt;text x=&quot;96&quot; y=&quot;280&quot; class=&quot;title&quot;&gt;Master 节点&lt;/text&gt;
+        &lt;text x=&quot;58&quot; y=&quot;315&quot; class=&quot;small&quot;&gt;任务：CanTask(3) / ButtonTask(2)&lt;/text&gt;&lt;text x=&quot;58&quot; y=&quot;336&quot; class=&quot;small&quot;&gt;按键：KEY_INPUT() → CanBasic_Send()&lt;/text&gt;&lt;text x=&quot;58&quot; y=&quot;357&quot; class=&quot;small&quot;&gt;显示：MasterCan_DrawS1/S2()&lt;/text&gt;&lt;text x=&quot;58&quot; y=&quot;378&quot; class=&quot;small&quot;&gt;温度：MasterCan_ShowTemperatureX10()&lt;/text&gt;&lt;text x=&quot;58&quot; y=&quot;399&quot; class=&quot;small&quot;&gt;CAN：ConfigMasterFilter / Receive&lt;/text&gt;&lt;text x=&quot;58&quot; y=&quot;420&quot; class=&quot;small&quot;&gt;ID：0x100/101 → 0x180/181/081&lt;/text&gt;
+        &lt;path d=&quot;M58 438 H313&quot; class=&quot;arrow dash&quot;/&gt;
+
+        &lt;rect x=&quot;410&quot; y=&quot;238&quot; width=&quot;300&quot; height=&quot;220&quot; rx=&quot;12&quot; class=&quot;node slave1&quot;/&gt;
+        &lt;circle cx=&quot;443&quot; cy=&quot;274&quot; r=&quot;15&quot; fill=&quot;var(--s1)&quot;/&gt;&lt;text x=&quot;443&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; fill=&quot;#07130d&quot;&gt;S1&lt;/text&gt;&lt;text x=&quot;471&quot; y=&quot;280&quot; class=&quot;title&quot;&gt;Slave 1 节点&lt;/text&gt;
+        &lt;text x=&quot;433&quot; y=&quot;315&quot; class=&quot;small&quot;&gt;任务：AdcTask / LightTask / DataTask&lt;/text&gt;&lt;text x=&quot;433&quot; y=&quot;336&quot; class=&quot;small&quot;&gt;ADC：ADC_Read_Satrt / Get_AD_Val&lt;/text&gt;&lt;text x=&quot;433&quot; y=&quot;357&quot; class=&quot;small&quot;&gt;光照：BH1750_Init / ReadLight&lt;/text&gt;&lt;text x=&quot;433&quot; y=&quot;378&quot; class=&quot;small&quot;&gt;底层：SW_I2C_Init / Start / Stop&lt;/text&gt;&lt;text x=&quot;433&quot; y=&quot;399&quot; class=&quot;small&quot;&gt;CAN：ConfigSlave1Filter / Send&lt;/text&gt;&lt;text x=&quot;433&quot; y=&quot;420&quot; class=&quot;small&quot;&gt;ID：0x100 命令 → 0x180 遥测&lt;/text&gt;
+        &lt;path d=&quot;M433 438 H688&quot; class=&quot;arrow dash&quot;/&gt;
+
+        &lt;rect x=&quot;785&quot; y=&quot;238&quot; width=&quot;300&quot; height=&quot;220&quot; rx=&quot;12&quot; class=&quot;node slave2&quot;/&gt;
+        &lt;circle cx=&quot;818&quot; cy=&quot;274&quot; r=&quot;15&quot; fill=&quot;var(--s2)&quot;/&gt;&lt;text x=&quot;818&quot; y=&quot;279&quot; text-anchor=&quot;middle&quot; fill=&quot;#140d1f&quot;&gt;S2&lt;/text&gt;&lt;text x=&quot;846&quot; y=&quot;280&quot; class=&quot;title&quot;&gt;Slave 2 节点&lt;/text&gt;
+        &lt;text x=&quot;808&quot; y=&quot;315&quot; class=&quot;small&quot;&gt;任务：AdcTask / TempTask / DataTask&lt;/text&gt;&lt;text x=&quot;808&quot; y=&quot;336&quot; class=&quot;small&quot;&gt;温度：DS18B20_Start/ReadResult&lt;/text&gt;&lt;text x=&quot;808&quot; y=&quot;357&quot; class=&quot;small&quot;&gt;底层：OneWire_Init / ReadByte&lt;/text&gt;&lt;text x=&quot;808&quot; y=&quot;378&quot; class=&quot;small&quot;&gt;报警：UpdateTempAlarm / SendTempAlarm&lt;/text&gt;&lt;text x=&quot;808&quot; y=&quot;399&quot; class=&quot;small&quot;&gt;CAN：ConfigSlave2Filter / Send&lt;/text&gt;&lt;text x=&quot;808&quot; y=&quot;420&quot; class=&quot;small&quot;&gt;ID：0x101 → 0x181；报警 0x081&lt;/text&gt;
+        &lt;path d=&quot;M808 438 H1063&quot; class=&quot;arrow dash&quot;/&gt;
+
+        &lt;path d=&quot;M335 492 H785&quot; class=&quot;arrow bus&quot;/&gt;&lt;path d=&quot;M785 515 H335&quot; class=&quot;arrow bus&quot;/&gt;
+        &lt;rect x=&quot;390&quot; y=&quot;478&quot; width=&quot;340&quot; height=&quot;72&quot; rx=&quot;22&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;505&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;CAN1 总线 / FIFO0&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;527&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;11-bit 标准数据帧，DLC ≤ 8&lt;/text&gt;
+        &lt;path d=&quot;M185 458 V492&quot; class=&quot;arrow bus&quot;/&gt;&lt;path d=&quot;M560 458 V478&quot; class=&quot;arrow bus&quot;/&gt;&lt;path d=&quot;M935 458 V515&quot; class=&quot;arrow bus&quot;/&gt;
+
+        &lt;text x=&quot;28&quot; y=&quot;600&quot; class=&quot;title&quot;&gt;接收中断的统一落点（所有节点相同）&lt;/text&gt;
+        &lt;rect x=&quot;45&quot; y=&quot;620&quot; width=&quot;210&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;150&quot; y=&quot;646&quot; text-anchor=&quot;middle&quot;&gt;USB_LP_CAN1_RX0_IRQHandler()&lt;/text&gt;
+        &lt;path d=&quot;M255 641 H302&quot; class=&quot;arrow&quot;/&gt;&lt;rect x=&quot;302&quot; y=&quot;620&quot; width=&quot;175&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;389&quot; y=&quot;646&quot; text-anchor=&quot;middle&quot;&gt;HAL_CAN_IRQHandler()&lt;/text&gt;
+        &lt;path d=&quot;M477 641 H524&quot; class=&quot;arrow&quot;/&gt;&lt;rect x=&quot;524&quot; y=&quot;620&quot; width=&quot;235&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;641&quot; y=&quot;646&quot; text-anchor=&quot;middle&quot;&gt;HAL_CAN_RxFifo0MsgPendingCallback()&lt;/text&gt;
+        &lt;path d=&quot;M759 641 H806&quot; class=&quot;arrow&quot;/&gt;&lt;rect x=&quot;806&quot; y=&quot;620&quot; width=&quot;250&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;931&quot; y=&quot;646&quot; text-anchor=&quot;middle&quot;&gt;CanRxQueue_PutFromIsr() → xQueueSendFromISR&lt;/text&gt;
+      &lt;/svg&gt;
+      &lt;div class=&quot;legend&quot;&gt;&lt;span&gt;&lt;i class=&quot;sw&quot; style=&quot;background:var(--master)&quot;&gt;&lt;/i&gt;Master 状态/查询&lt;/span&gt;&lt;span&gt;&lt;i class=&quot;sw&quot; style=&quot;background:var(--s1)&quot;&gt;&lt;/i&gt;Slave 1 采集&lt;/span&gt;&lt;span&gt;&lt;i class=&quot;sw&quot; style=&quot;background:var(--s2)&quot;&gt;&lt;/i&gt;Slave 2 采集/报警&lt;/span&gt;&lt;span&gt;&lt;i class=&quot;sw&quot; style=&quot;background:var(--bus)&quot;&gt;&lt;/i&gt;CAN1 帧路径&lt;/span&gt;&lt;/div&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;view&quot; data-panel=&quot;master&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 1120 940&quot; role=&quot;img&quot; aria-label=&quot;Master 节点 ButtonTask 与 CanTask 的查询闭环时序&quot;&gt;
+        &lt;defs&gt;&lt;marker id=&quot;arrowM2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#86a3c5&quot;/&gt;&lt;/marker&gt;&lt;marker id=&quot;arrowBusM2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#57c7ff&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+        &lt;text x=&quot;28&quot; y=&quot;32&quot; class=&quot;title&quot;&gt;Master 节点：ButtonTask 发起查询，CanTask 接收并闭环确认&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;52&quot; width=&quot;1064&quot; height=&quot;82&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;48&quot; y=&quot;73&quot; width=&quot;220&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;158&quot; y=&quot;99&quot; text-anchor=&quot;middle&quot;&gt;main() → task_start()&lt;/text&gt;&lt;path d=&quot;M268 94 H298&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;298&quot; y=&quot;73&quot; width=&quot;260&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;428&quot; y=&quot;99&quot; text-anchor=&quot;middle&quot;&gt;xTaskCreate(CanTask, ButtonTask)&lt;/text&gt;&lt;path d=&quot;M558 94 H588&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;588&quot; y=&quot;73&quot; width=&quot;440&quot; height=&quot;42&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;808&quot; y=&quot;99&quot; text-anchor=&quot;middle&quot;&gt;两个任务并发运行：CanTask 优先级 3，ButtonTask 优先级 2&lt;/text&gt;
+
+        &lt;text x=&quot;28&quot; y=&quot;166&quot; class=&quot;title&quot;&gt;一次“按键查询”事务的真实协作关系&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;186&quot; width=&quot;1064&quot; height=&quot;690&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;
+        &lt;line x1=&quot;175&quot; y1=&quot;244&quot; x2=&quot;175&quot; y2=&quot;820&quot; stroke=&quot;#5f7591&quot; stroke-dasharray=&quot;5 5&quot;/&gt;&lt;line x1=&quot;390&quot; y1=&quot;244&quot; x2=&quot;390&quot; y2=&quot;820&quot; stroke=&quot;#5f7591&quot; stroke-dasharray=&quot;5 5&quot;/&gt;&lt;line x1=&quot;605&quot; y1=&quot;244&quot; x2=&quot;605&quot; y2=&quot;820&quot; stroke=&quot;#5f7591&quot; stroke-dasharray=&quot;5 5&quot;/&gt;&lt;line x1=&quot;820&quot; y1=&quot;244&quot; x2=&quot;820&quot; y2=&quot;820&quot; stroke=&quot;#5f7591&quot; stroke-dasharray=&quot;5 5&quot;/&gt;&lt;line x1=&quot;1010&quot; y1=&quot;244&quot; x2=&quot;1010&quot; y2=&quot;820&quot; stroke=&quot;#5f7591&quot; stroke-dasharray=&quot;5 5&quot;/&gt;
+        &lt;text x=&quot;175&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;ButtonTask&lt;/text&gt;&lt;text x=&quot;390&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;s_query_wait&lt;/text&gt;&lt;text x=&quot;605&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;CAN1 总线&lt;/text&gt;&lt;text x=&quot;820&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;从节点&lt;/text&gt;&lt;text x=&quot;1010&quot; y=&quot;222&quot; text-anchor=&quot;middle&quot; class=&quot;title&quot;&gt;CanTask&lt;/text&gt;
+        &lt;text x=&quot;175&quot; y=&quot;244&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;priority 2&lt;/text&gt;&lt;text x=&quot;1010&quot; y=&quot;244&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;priority 3&lt;/text&gt;
+
+        &lt;circle cx=&quot;55&quot; cy=&quot;286&quot; r=&quot;14&quot; fill=&quot;var(--master)&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;291&quot; text-anchor=&quot;middle&quot; fill=&quot;#111&quot;&gt;1&lt;/text&gt;&lt;rect x=&quot;78&quot; y=&quot;260&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;173&quot; y=&quot;289&quot; text-anchor=&quot;middle&quot;&gt;KEY_INPUT()&lt;/text&gt;&lt;text x=&quot;173&quot; y=&quot;305&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;读取 PB1 / PB11&lt;/text&gt;
+        &lt;path d=&quot;M268 286 H318&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;polygon points=&quot;390,260 468,286 390,312 312,286&quot; class=&quot;node decision&quot;/&gt;&lt;text x=&quot;390&quot; y=&quot;282&quot; text-anchor=&quot;middle&quot;&gt;key != 0?&lt;/text&gt;&lt;text x=&quot;390&quot; y=&quot;298&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;且 pending == 0&lt;/text&gt;
+        &lt;path d=&quot;M312 286 H255 V350 H175&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;text x=&quot;50&quot; y=&quot;345&quot; class=&quot;small&quot;&gt;否：不发新命令&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;362&quot; class=&quot;small&quot;&gt;vTaskDelay(10 ms) 后重试&lt;/text&gt;
+
+        &lt;circle cx=&quot;55&quot; cy=&quot;405&quot; r=&quot;14&quot; fill=&quot;var(--master)&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;410&quot; text-anchor=&quot;middle&quot; fill=&quot;#111&quot;&gt;2&lt;/text&gt;&lt;rect x=&quot;78&quot; y=&quot;379&quot; width=&quot;190&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;173&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot;&gt;选择目标 + sequence&lt;/text&gt;&lt;text x=&quot;173&quot; y=&quot;424&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;0x100/S1 或 0x101/S2&lt;/text&gt;&lt;path d=&quot;M268 405 H350&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;
+        &lt;rect x=&quot;350&quot; y=&quot;379&quot; width=&quot;180&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;440&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot;&gt;临界区写入&lt;/text&gt;&lt;text x=&quot;440&quot; y=&quot;424&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;pending,node,seq,tick&lt;/text&gt;&lt;path d=&quot;M530 405 H580&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;
+        &lt;rect x=&quot;580&quot; y=&quot;379&quot; width=&quot;180&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;670&quot; y=&quot;408&quot; text-anchor=&quot;middle&quot;&gt;CanBasic_Send()&lt;/text&gt;&lt;text x=&quot;670&quot; y=&quot;424&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;命令帧，DLC=8&lt;/text&gt;&lt;path d=&quot;M760 405 H790&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowBusM2)&quot;/&gt;&lt;text x=&quot;606&quot; y=&quot;445&quot; class=&quot;small&quot;&gt;CAN_ID_S1_COMMAND=0x100 / S2=0x101&lt;/text&gt;
+
+        &lt;circle cx=&quot;55&quot; cy=&quot;512&quot; r=&quot;14&quot; fill=&quot;var(--bus)&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;517&quot; text-anchor=&quot;middle&quot; fill=&quot;#07121f&quot;&gt;3&lt;/text&gt;&lt;path d=&quot;M820 468 V512&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowBusM2)&quot;/&gt;&lt;rect x=&quot;720&quot; y=&quot;486&quot; width=&quot;200&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;820&quot; y=&quot;515&quot; text-anchor=&quot;middle&quot;&gt;从节点响应&lt;/text&gt;&lt;text x=&quot;820&quot; y=&quot;531&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;Telemetry bit7=reply，带原 sequence&lt;/text&gt;&lt;path d=&quot;M720 512 H605&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowBusM2)&quot;/&gt;
+        &lt;rect x=&quot;455&quot; y=&quot;486&quot; width=&quot;180&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;545&quot; y=&quot;515&quot; text-anchor=&quot;middle&quot;&gt;CAN RX0 中断&lt;/text&gt;&lt;text x=&quot;545&quot; y=&quot;531&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;HAL → PutFromIsr&lt;/text&gt;&lt;path d=&quot;M455 512 H405&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;285&quot; y=&quot;486&quot; width=&quot;170&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;370&quot; y=&quot;515&quot; text-anchor=&quot;middle&quot;&gt;CanRxQueue&lt;/text&gt;&lt;text x=&quot;370&quot; y=&quot;531&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueSendFromISR&lt;/text&gt;
+
+        &lt;circle cx=&quot;55&quot; cy=&quot;620&quot; r=&quot;14&quot; fill=&quot;var(--master)&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;625&quot; text-anchor=&quot;middle&quot; fill=&quot;#111&quot;&gt;4&lt;/text&gt;&lt;rect x=&quot;920&quot; y=&quot;594&quot; width=&quot;160&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;1000&quot; y=&quot;623&quot; text-anchor=&quot;middle&quot;&gt;CanRxQueue_Get()&lt;/text&gt;&lt;text x=&quot;1000&quot; y=&quot;639&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;最多等 200 ms&lt;/text&gt;&lt;path d=&quot;M920 620 H850&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;655&quot; y=&quot;594&quot; width=&quot;195&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;752&quot; y=&quot;623&quot; text-anchor=&quot;middle&quot;&gt;解析 frame&lt;/text&gt;&lt;text x=&quot;752&quot; y=&quot;639&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ID / DLC / data[0]&lt;/text&gt;&lt;path d=&quot;M655 620 H585&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;365&quot; y=&quot;594&quot; width=&quot;220&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;475&quot; y=&quot;623&quot; text-anchor=&quot;middle&quot;&gt;GetU16BE / GetS16BE&lt;/text&gt;&lt;text x=&quot;475&quot; y=&quot;639&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;填充 latest，online=1&lt;/text&gt;
+
+        &lt;circle cx=&quot;55&quot; cy=&quot;726&quot; r=&quot;14&quot; fill=&quot;var(--master)&quot;/&gt;&lt;text x=&quot;55&quot; y=&quot;731&quot; text-anchor=&quot;middle&quot; fill=&quot;#111&quot;&gt;5&lt;/text&gt;&lt;polygon points=&quot;1000,700 1070,726 1000,752 930,726&quot; class=&quot;node decision&quot;/&gt;&lt;text x=&quot;1000&quot; y=&quot;722&quot; text-anchor=&quot;middle&quot;&gt;bit7=1?&lt;/text&gt;&lt;text x=&quot;1000&quot; y=&quot;738&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;node + seq 匹配&lt;/text&gt;&lt;path d=&quot;M930 726 H825&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;610&quot; y=&quot;700&quot; width=&quot;215&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;717&quot; y=&quot;729&quot; text-anchor=&quot;middle&quot;&gt;清 pending + latency&lt;/text&gt;&lt;text x=&quot;717&quot; y=&quot;745&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;Serial_Printf(reply)&lt;/text&gt;&lt;path d=&quot;M610 752 V786 H510&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;
+        &lt;rect x=&quot;285&quot; y=&quot;770&quot; width=&quot;225&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node master&quot;/&gt;&lt;text x=&quot;398&quot; y=&quot;799&quot; text-anchor=&quot;middle&quot;&gt;MasterCan_DrawS1/S2()&lt;/text&gt;&lt;text x=&quot;398&quot; y=&quot;815&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;数据变化才刷 OLED&lt;/text&gt;&lt;path d=&quot;M825 752 V786 H825&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowM2)&quot;/&gt;&lt;rect x=&quot;825&quot; y=&quot;770&quot; width=&quot;225&quot; height=&quot;52&quot; rx=&quot;8&quot; class=&quot;node alarm&quot;/&gt;&lt;text x=&quot;937&quot; y=&quot;799&quot; text-anchor=&quot;middle&quot;&gt;pending 超过 500 ms?&lt;/text&gt;&lt;text x=&quot;937&quot; y=&quot;815&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;清 pending，打印 timeout&lt;/text&gt;
+        &lt;text x=&quot;50&quot; y=&quot;856&quot; class=&quot;small&quot;&gt;关键关系：ButtonTask 不调用 CanTask；它只写 s_query_wait 并发命令。CanTask 独立阻塞在接收队列，收到帧后读取并清除同一个 s_query_wait。&lt;/text&gt;
+      &lt;/svg&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;view&quot; data-panel=&quot;slave1&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 1120 900&quot; role=&quot;img&quot; aria-label=&quot;Slave 1 节点函数级运行流程&quot;&gt;
+        &lt;defs&gt;&lt;marker id=&quot;arrowS1&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#86a3c5&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+        &lt;text x=&quot;28&quot; y=&quot;32&quot; class=&quot;title&quot;&gt;Slave 1 节点：ADC + BH1750 → 快照 → 遥测&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;52&quot; width=&quot;1064&quot; height=&quot;88&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;48&quot; y=&quot;75&quot; width=&quot;220&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;158&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;main() → sensor_start()&lt;/text&gt;&lt;path d=&quot;M268 96 H295&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;rect x=&quot;295&quot; y=&quot;75&quot; width=&quot;300&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;445&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;sensorQueue(16) + snapshotMutex&lt;/text&gt;&lt;path d=&quot;M595 96 H622&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;rect x=&quot;622&quot; y=&quot;75&quot; width=&quot;440&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;842&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;task_start() → AdcTask / LightTask / DataTask / UITask / Slave1CanTask / Slave1CommandTask&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;680&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;395&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;680&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;762&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;680&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;
+        &lt;text x=&quot;50&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;采集任务&lt;/text&gt;&lt;text x=&quot;417&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;数据与 UI&lt;/text&gt;&lt;text x=&quot;784&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;CAN 任务&lt;/text&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;56&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;254&quot; text-anchor=&quot;middle&quot;&gt;AdcTask()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;270&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ADC_Read_Satrt → Get_AD_Val&lt;/text&gt;&lt;path d=&quot;M193 281 V313&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;313&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;343&quot; text-anchor=&quot;middle&quot;&gt;SensorMsg{source=0, valid=1}&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;359&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueSend(sensorQueue)&lt;/text&gt;&lt;path d=&quot;M193 371 V403&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;text x=&quot;58&quot; y=&quot;395&quot; class=&quot;small&quot;&gt;100 ms&lt;/text&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;430&quot; width=&quot;286&quot; height=&quot;60&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;459&quot; text-anchor=&quot;middle&quot;&gt;LightTask()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;475&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;BH1750_Init → SendCommand(0x20)&lt;/text&gt;&lt;path d=&quot;M193 490 V522&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;522&quot; width=&quot;286&quot; height=&quot;60&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;552&quot; text-anchor=&quot;middle&quot;&gt;BH1750_ReadLight(&amp;amp;lux)&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;568&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;180 ms 等待；失败 valid=0&lt;/text&gt;&lt;path d=&quot;M193 582 V614&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;text x=&quot;58&quot; y=&quot;607&quot; class=&quot;small&quot;&gt;500 ms&lt;/text&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;638&quot; width=&quot;286&quot; height=&quot;60&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;668&quot; text-anchor=&quot;middle&quot;&gt;SensorMsg{source=1}&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;684&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueSend(sensorQueue)&lt;/text&gt;
+
+        &lt;rect x=&quot;417&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;68&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;256&quot; text-anchor=&quot;middle&quot;&gt;DataTask()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;273&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueReceive → xSemaphoreTake&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;288&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;按 source 更新 g_snapshot&lt;/text&gt;&lt;path d=&quot;M560 293 V330&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;330&quot; width=&quot;286&quot; height=&quot;65&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;360&quot; text-anchor=&quot;middle&quot;&gt;g_snapshot.adc/light_lux&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;377&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;更新 valid 标志 → xSemaphoreGive&lt;/text&gt;&lt;path d=&quot;M560 395 V430&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;430&quot; width=&quot;286&quot; height=&quot;70&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;462&quot; text-anchor=&quot;middle&quot;&gt;UITask()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;479&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;复制快照 → OLED_ShowString/Num&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;494&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;200 ms vTaskDelayUntil&lt;/text&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;548&quot; width=&quot;286&quot; height=&quot;72&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;580&quot; text-anchor=&quot;middle&quot;&gt;CanProtocol_PutU16BE()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;597&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ADC → data[2..3]；光照 → data[4..5]&lt;/text&gt;
+
+        &lt;rect x=&quot;784&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;255&quot; text-anchor=&quot;middle&quot;&gt;Slave1CommandTask()&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;271&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;CanRxQueue_Get(portMAX_DELAY)&lt;/text&gt;&lt;path d=&quot;M927 283 V315&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+        &lt;polygon points=&quot;927,315 1027,363 927,411 827,363&quot; class=&quot;node decision&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;360&quot; text-anchor=&quot;middle&quot;&gt;id=0x100 且&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;377&quot; text-anchor=&quot;middle&quot;&gt;QUERY_NOW?&lt;/text&gt;&lt;path d=&quot;M827 363 H790 V455&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;text x=&quot;793&quot; y=&quot;445&quot; class=&quot;small&quot;&gt;否：继续等待&lt;/text&gt;
+        &lt;path d=&quot;M1027 363 H1068 V455&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;rect x=&quot;784&quot; y=&quot;455&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;485&quot; text-anchor=&quot;middle&quot;&gt;xTaskNotify(Slave1CanTask_Handle)&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;501&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;传递 frame.data[1] 序号&lt;/text&gt;
+        &lt;path d=&quot;M927 513 V548&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;rect x=&quot;784&quot; y=&quot;548&quot; width=&quot;286&quot; height=&quot;72&quot; rx=&quot;8&quot; class=&quot;node slave1&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;580&quot; text-anchor=&quot;middle&quot;&gt;Slave1CanTask()&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;597&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xTaskNotifyWait(2 s) → 取快照&lt;/text&gt;
+        &lt;path d=&quot;M927 620 V655&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;rect x=&quot;784&quot; y=&quot;655&quot; width=&quot;286&quot; height=&quot;75&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;687&quot; text-anchor=&quot;middle&quot;&gt;组帧 data[0..7]&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;704&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;bit0 ADC valid；bit1 light valid&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;720&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;bit7=reply，data[7]=query seq&lt;/text&gt;
+        &lt;path d=&quot;M784 692 H727&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;&lt;text x=&quot;620&quot; y=&quot;684&quot; class=&quot;small&quot;&gt;CAN_ID_S1_TELEMETRY 0x180&lt;/text&gt;
+        &lt;path d=&quot;M727 710 H784&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowS1)&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/section&gt;
+
+    &lt;section class=&quot;view&quot; data-panel=&quot;slave2&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 1120 940&quot; role=&quot;img&quot; aria-label=&quot;Slave 2 节点函数级运行流程&quot;&gt;
+        &lt;defs&gt;&lt;marker id=&quot;arrowS2&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#86a3c5&quot;/&gt;&lt;/marker&gt;&lt;marker id=&quot;arrowAlarm&quot; viewBox=&quot;0 0 10 10&quot; refX=&quot;9&quot; refY=&quot;5&quot; markerWidth=&quot;6&quot; markerHeight=&quot;6&quot; orient=&quot;auto&quot;&gt;&lt;path d=&quot;M 0 0 L 10 5 L 0 10 z&quot; fill=&quot;#ff7777&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;
+        &lt;text x=&quot;28&quot; y=&quot;32&quot; class=&quot;title&quot;&gt;Slave 2 节点：ADC + DS18B20 → 遥测 + 温度边沿报警&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;52&quot; width=&quot;1064&quot; height=&quot;88&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;48&quot; y=&quot;75&quot; width=&quot;220&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node boot&quot;/&gt;&lt;text x=&quot;158&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;main() → sensor_start()&lt;/text&gt;&lt;path d=&quot;M268 96 H295&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;&lt;rect x=&quot;295&quot; y=&quot;75&quot; width=&quot;300&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;445&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;sensorQueue(16) + snapshotMutex&lt;/text&gt;&lt;path d=&quot;M595 96 H622&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;&lt;rect x=&quot;622&quot; y=&quot;75&quot; width=&quot;440&quot; height=&quot;43&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;842&quot; y=&quot;101&quot; text-anchor=&quot;middle&quot;&gt;task_start() → AdcTask / TempTask / DataTask / UITask / S2 CAN tasks&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;720&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;395&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;720&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;762&quot; y=&quot;170&quot; width=&quot;330&quot; height=&quot;720&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;
+        &lt;text x=&quot;50&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;采集任务&lt;/text&gt;&lt;text x=&quot;417&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;数据与 UI&lt;/text&gt;&lt;text x=&quot;784&quot; y=&quot;198&quot; class=&quot;title&quot;&gt;CAN / 报警任务&lt;/text&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;255&quot; text-anchor=&quot;middle&quot;&gt;AdcTask()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;271&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ADC_Read_Satrt → Get_AD_Val&lt;/text&gt;&lt;path d=&quot;M193 283 V315&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;315&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;345&quot; text-anchor=&quot;middle&quot;&gt;SensorMsg{source=0}&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;361&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueSend；100 ms&lt;/text&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;430&quot; width=&quot;286&quot; height=&quot;68&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;461&quot; text-anchor=&quot;middle&quot;&gt;TempTask()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;478&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;OneWire_Init()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;493&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;DS18B20_StartConversion()&lt;/text&gt;&lt;path d=&quot;M193 498 V530&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;530&quot; width=&quot;286&quot; height=&quot;68&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;560&quot; text-anchor=&quot;middle&quot;&gt;vTaskDelay(750 ms)&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;578&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;→ DS18B20_ReadTempResult()&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;593&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;-128.0f → valid=0&lt;/text&gt;&lt;path d=&quot;M193 598 V630&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;50&quot; y=&quot;630&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;193&quot; y=&quot;660&quot; text-anchor=&quot;middle&quot;&gt;SensorMsg{source=2}&lt;/text&gt;&lt;text x=&quot;193&quot; y=&quot;676&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueSend；1 s&lt;/text&gt;
+
+        &lt;rect x=&quot;417&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;72&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;256&quot; text-anchor=&quot;middle&quot;&gt;DataTask()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;273&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xQueueReceive → mutex&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;289&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;source 0→adc；source 2→temp&lt;/text&gt;&lt;path d=&quot;M560 297 V333&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;333&quot; width=&quot;286&quot; height=&quot;62&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;362&quot; text-anchor=&quot;middle&quot;&gt;g_snapshot + valid flags&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;379&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xSemaphoreGive&lt;/text&gt;&lt;path d=&quot;M560 395 V430&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;430&quot; width=&quot;286&quot; height=&quot;76&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;462&quot; text-anchor=&quot;middle&quot;&gt;UITask()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;479&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ADC 显示 + temp×10 定点显示&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;495&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;Slave2Ui_ShowTemperatureX10()&lt;/text&gt;
+        &lt;rect x=&quot;417&quot; y=&quot;550&quot; width=&quot;286&quot; height=&quot;78&quot; rx=&quot;8&quot; class=&quot;node alarm&quot;/&gt;&lt;text x=&quot;560&quot; y=&quot;582&quot; text-anchor=&quot;middle&quot;&gt;Slave2Can_UpdateTempAlarm()&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;599&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;≥300 → ON；≤280 → OFF&lt;/text&gt;&lt;text x=&quot;560&quot; y=&quot;615&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;只在状态边沿发事件帧&lt;/text&gt;
+
+        &lt;rect x=&quot;784&quot; y=&quot;225&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;255&quot; text-anchor=&quot;middle&quot;&gt;Slave2CommandTask()&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;271&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;CanRxQueue_Get(portMAX_DELAY)&lt;/text&gt;&lt;path d=&quot;M927 283 V315&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;polygon points=&quot;927,315 1027,363 927,411 827,363&quot; class=&quot;node decision&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;360&quot; text-anchor=&quot;middle&quot;&gt;id=0x101 且&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;377&quot; text-anchor=&quot;middle&quot;&gt;QUERY_NOW?&lt;/text&gt;&lt;path d=&quot;M1027 363 H1068 V455&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;784&quot; y=&quot;455&quot; width=&quot;286&quot; height=&quot;58&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;485&quot; text-anchor=&quot;middle&quot;&gt;xTaskNotify(Slave2CanTask_Handle)&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;501&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;传递 query sequence&lt;/text&gt;&lt;path d=&quot;M927 513 V548&quot; class=&quot;arrow dash&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;784&quot; y=&quot;548&quot; width=&quot;286&quot; height=&quot;70&quot; rx=&quot;8&quot; class=&quot;node slave2&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;578&quot; text-anchor=&quot;middle&quot;&gt;Slave2CanTask()&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;595&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;xTaskNotifyWait(2 s) → 快照&lt;/text&gt;&lt;path d=&quot;M927 618 V650&quot; class=&quot;arrow&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;
+        &lt;rect x=&quot;784&quot; y=&quot;650&quot; width=&quot;286&quot; height=&quot;78&quot; rx=&quot;8&quot; class=&quot;node common&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;681&quot; text-anchor=&quot;middle&quot;&gt;PutU16BE / PutS16BE&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;698&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;ADC[2..3]；temp×10[4..5]&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;715&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;status bit0/2/3/7 + seq&lt;/text&gt;&lt;path d=&quot;M784 688 H727&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowS2)&quot;/&gt;&lt;text x=&quot;605&quot; y=&quot;680&quot; class=&quot;small&quot;&gt;CAN_ID_S2_TELEMETRY 0x181&lt;/text&gt;
+        &lt;path d=&quot;M727 570 H690&quot; class=&quot;arrow alarm&quot; marker-end=&quot;url(#arrowAlarm)&quot;/&gt;&lt;rect x=&quot;784&quot; y=&quot;760&quot; width=&quot;286&quot; height=&quot;82&quot; rx=&quot;8&quot; class=&quot;node alarm&quot;/&gt;&lt;text x=&quot;927&quot; y=&quot;791&quot; text-anchor=&quot;middle&quot;&gt;Slave2Can_SendTempAlarm()&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;808&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;PutS16BE(temp) + active + 0x02&lt;/text&gt;&lt;text x=&quot;927&quot; y=&quot;825&quot; text-anchor=&quot;middle&quot; class=&quot;small&quot;&gt;CanBasic_Send(CAN_ID_S2_ALARM=0x081)&lt;/text&gt;&lt;path d=&quot;M784 800 H727&quot; class=&quot;arrow bus&quot; marker-end=&quot;url(#arrowAlarm)&quot;/&gt;
+      &lt;/svg&gt;
+    &lt;/section&gt;
+    &lt;section class=&quot;view&quot; data-panel=&quot;functions&quot;&gt;
+      &lt;svg viewBox=&quot;0 0 1120 1060&quot; role=&quot;img&quot; aria-label=&quot;三个节点 Core Src 核心函数索引&quot;&gt;
+        &lt;text x=&quot;28&quot; y=&quot;32&quot; class=&quot;title&quot;&gt;核心函数索引：补齐上一版流程图未展开的函数&lt;/text&gt;
+        &lt;text x=&quot;28&quot; y=&quot;54&quot; class=&quot;small&quot;&gt;范围：三个节点 Core/Src 中与启动、任务、传感器、CAN、显示和中断直接相关的函数；不展开 STM32 HAL/CMSIS 厂商库内部实现。&lt;/text&gt;
+        &lt;rect x=&quot;28&quot; y=&quot;78&quot; width=&quot;338&quot; height=&quot;942&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;391&quot; y=&quot;78&quot; width=&quot;338&quot; height=&quot;942&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;&lt;rect x=&quot;754&quot; y=&quot;78&quot; width=&quot;338&quot; height=&quot;942&quot; rx=&quot;12&quot; class=&quot;lane&quot;/&gt;
+        &lt;text x=&quot;50&quot; y=&quot;111&quot; class=&quot;title&quot;&gt;Master&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;111&quot; class=&quot;title&quot;&gt;Slave 1&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;111&quot; class=&quot;title&quot;&gt;Slave 2&lt;/text&gt;
+
+        &lt;text x=&quot;50&quot; y=&quot;140&quot; class=&quot;small&quot;&gt;启动 / 任务&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;161&quot;&gt;main()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;180&quot;&gt;SystemClock_Config()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;199&quot;&gt;MX_GPIO_Init / MX_USART1_UART_Init&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;218&quot;&gt;MX_CAN_Init()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;237&quot;&gt;Delay_Init() / OLED_Init()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;256&quot;&gt;sensor_start() / task_start()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;275&quot;&gt;CanTask() / ButtonTask()&lt;/text&gt;
+        &lt;text x=&quot;50&quot; y=&quot;306&quot; class=&quot;small&quot;&gt;Master 专属业务&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;327&quot;&gt;KEY_INPUT()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;346&quot;&gt;MasterCan_DrawS1()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;365&quot;&gt;MasterCan_DrawS2()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;384&quot;&gt;MasterCan_ShowTemperatureX10()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;403&quot;&gt;Serial_Printf()&lt;/text&gt;
+        &lt;text x=&quot;50&quot; y=&quot;434&quot; class=&quot;small&quot;&gt;CAN / 协议 / 接收队列&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;455&quot;&gt;CanBasic_ConfigMasterFilter()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;474&quot;&gt;CanBasic_Init() / CanBasic_Send()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;493&quot;&gt;CanBasic_Receive()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;512&quot;&gt;CanProtocol_PutU16BE()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;531&quot;&gt;CanProtocol_GetU16BE()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;550&quot;&gt;CanProtocol_PutS16BE()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;569&quot;&gt;CanProtocol_GetS16BE()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;588&quot;&gt;CanRxQueue_Init()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;607&quot;&gt;CanRxQueue_PutFromIsr()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;626&quot;&gt;CanRxQueue_Get()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;645&quot;&gt;CanRxQueue_GetDropCount()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;664&quot;&gt;CanRxQueue_GetIrqCount()&lt;/text&gt;
+        &lt;text x=&quot;50&quot; y=&quot;695&quot; class=&quot;small&quot;&gt;中断 / 错误 / 时基&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;716&quot;&gt;USB_LP_CAN1_RX0_IRQHandler()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;735&quot;&gt;HAL_CAN_RxFifo0MsgPendingCallback()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;754&quot;&gt;HAL_CAN_ErrorCallback()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;773&quot;&gt;SysTick_Handler()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;792&quot;&gt;TIM4_IRQHandler()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;811&quot;&gt;HAL_TIM_PeriodElapsedCallback()&lt;/text&gt;&lt;text x=&quot;50&quot; y=&quot;830&quot;&gt;Error_Handler()&lt;/text&gt;
+
+        &lt;text x=&quot;413&quot; y=&quot;140&quot; class=&quot;small&quot;&gt;启动 / 任务&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;161&quot;&gt;main() / SystemClock_Config()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;180&quot;&gt;MX_GPIO_Init() / MX_DMA_Init()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;199&quot;&gt;MX_USART1_UART_Init() / MX_ADC1_Init()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;218&quot;&gt;MX_CAN_Init()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;237&quot;&gt;Delay_Init() / OLED_Init()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;256&quot;&gt;sensor_start() / task_start()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;275&quot;&gt;AdcTask() / LightTask()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;294&quot;&gt;DataTask() / UITask()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;313&quot;&gt;Slave1CanTask() / Slave1CommandTask()&lt;/text&gt;
+        &lt;text x=&quot;413&quot; y=&quot;344&quot; class=&quot;small&quot;&gt;ADC + BH1750 + 软件 I²C&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;365&quot;&gt;ADC_Read_Satrt() / Get_AD_Val()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;384&quot;&gt;Print_AD_Val()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;403&quot;&gt;BH1750_Init()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;422&quot;&gt;BH1750_SendCommand()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;441&quot;&gt;BH1750_SetMode()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;460&quot;&gt;BH1750_ReadLight()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;479&quot;&gt;SW_I2C_Init() / SW_I2C_Start()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;498&quot;&gt;SW_I2C_Stop() / SW_I2C_SendByte()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;517&quot;&gt;SW_I2C_ReceiveByte()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;536&quot;&gt;SW_I2C_SendAck() / SW_I2C_ReceiveAck()&lt;/text&gt;
+        &lt;text x=&quot;413&quot; y=&quot;567&quot; class=&quot;small&quot;&gt;CAN / 协议 / 接收队列&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;588&quot;&gt;CanBasic_ConfigSlave1Filter()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;607&quot;&gt;CanBasic_Init() / CanBasic_Send()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;626&quot;&gt;CanBasic_Receive()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;645&quot;&gt;CanProtocol_Put/GetU16BE()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;664&quot;&gt;CanProtocol_Put/GetS16BE()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;683&quot;&gt;CanRxQueue_Init / PutFromIsr&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;702&quot;&gt;CanRxQueue_Get / GetDropCount&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;721&quot;&gt;CanRxQueue_GetIrqCount()&lt;/text&gt;
+        &lt;text x=&quot;413&quot; y=&quot;752&quot; class=&quot;small&quot;&gt;显示 / 中断&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;773&quot;&gt;OLED_ShowChar / OLED_ShowString&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;792&quot;&gt;OLED_ShowNum() / OLED_SetCursor()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;811&quot;&gt;DMA1_Channel1_IRQHandler()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;830&quot;&gt;USB_LP_CAN1_RX0_IRQHandler()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;849&quot;&gt;HAL_CAN_RxFifo0MsgPendingCallback()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;868&quot;&gt;SysTick_Handler() / TIM4_IRQHandler()&lt;/text&gt;&lt;text x=&quot;413&quot; y=&quot;887&quot;&gt;HAL_TIM_PeriodElapsedCallback()&lt;/text&gt;
+
+        &lt;text x=&quot;776&quot; y=&quot;140&quot; class=&quot;small&quot;&gt;启动 / 任务&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;161&quot;&gt;main() / SystemClock_Config()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;180&quot;&gt;MX_GPIO_Init() / MX_DMA_Init()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;199&quot;&gt;MX_USART1_UART_Init() / MX_ADC1_Init()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;218&quot;&gt;MX_CAN_Init()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;237&quot;&gt;Delay_Init() / OLED_Init()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;256&quot;&gt;sensor_start() / task_start()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;275&quot;&gt;AdcTask() / TempTask()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;294&quot;&gt;DataTask() / UITask()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;313&quot;&gt;Slave2CanTask() / Slave2CommandTask()&lt;/text&gt;
+        &lt;text x=&quot;776&quot; y=&quot;344&quot; class=&quot;small&quot;&gt;ADC + DS18B20 + OneWire&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;365&quot;&gt;ADC_Read_Satrt() / Get_AD_Val()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;384&quot;&gt;Print_AD_Val()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;403&quot;&gt;DS18B20_ReadTemp()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;422&quot;&gt;DS18B20_StartConversion()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;441&quot;&gt;DS18B20_ReadTempResult()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;460&quot;&gt;OneWire_Init() / OneWire_Reset()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;479&quot;&gt;OneWire_WriteBit() / OneWire_ReadBit()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;498&quot;&gt;OneWire_WriteByte() / OneWire_ReadByte()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;517&quot;&gt;DQ_LOW() / DQ_HIGH() / DQ_READ()&lt;/text&gt;
+        &lt;text x=&quot;776&quot; y=&quot;548&quot; class=&quot;small&quot;&gt;温度显示 / 报警&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;569&quot;&gt;Slave2Ui_ShowTemperatureX10()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;588&quot;&gt;Slave2Can_UpdateTempAlarm()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;607&quot;&gt;Slave2Can_SendTempAlarm()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;626&quot;&gt;阈值：ON ≥ 300，OFF ≤ 280&lt;/text&gt;
+        &lt;text x=&quot;776&quot; y=&quot;657&quot; class=&quot;small&quot;&gt;CAN / 协议 / 接收队列&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;678&quot;&gt;CanBasic_ConfigSlave2Filter()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;697&quot;&gt;CanBasic_Init() / CanBasic_Send()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;716&quot;&gt;CanBasic_Receive()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;735&quot;&gt;CanProtocol_Put/GetU16BE()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;754&quot;&gt;CanProtocol_Put/GetS16BE()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;773&quot;&gt;CanRxQueue_Init / PutFromIsr&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;792&quot;&gt;CanRxQueue_Get / GetDropCount&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;811&quot;&gt;CanRxQueue_GetIrqCount()&lt;/text&gt;
+        &lt;text x=&quot;776&quot; y=&quot;842&quot; class=&quot;small&quot;&gt;显示 / 中断&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;863&quot;&gt;OLED_ShowChar / OLED_ShowString&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;882&quot;&gt;OLED_ShowNum() / OLED_SetCursor()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;901&quot;&gt;DMA1_Channel1_IRQHandler()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;920&quot;&gt;USB_LP_CAN1_RX0_IRQHandler()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;939&quot;&gt;HAL_CAN_RxFifo0MsgPendingCallback()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;958&quot;&gt;SysTick_Handler() / TIM4_IRQHandler()&lt;/text&gt;&lt;text x=&quot;776&quot; y=&quot;977&quot;&gt;HAL_TIM_PeriodElapsedCallback()&lt;/text&gt;
+      &lt;/svg&gt;
+    &lt;/section&gt;
+    &lt;div class=&quot;hint&quot;&gt;学习顺序：先看“系统总览”确认 ID 和数据流，再看三个节点流程，最后用“核心函数索引”逐项回到源码；面试时可沿着中断接收链和 `sensorQueue/snapshotMutex` 两条线展开。&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    (() =&gt; {
+      const root = document.getElementById(&#x27;can-runtime-visual&#x27;);
+      const tabs = [...root.querySelectorAll(&#x27;[role=&quot;tab&quot;]&#x27;)];
+      const panels = [...root.querySelectorAll(&#x27;[data-panel]&#x27;)];
+      const select = (name) =&gt; {
+        tabs.forEach((tab) =&gt; tab.setAttribute(&#x27;aria-selected&#x27;, String(tab.dataset.view === name)));
+        panels.forEach((panel) =&gt; panel.classList.toggle(&#x27;active&#x27;, panel.dataset.panel === name));
+      };
+      tabs.forEach((tab) =&gt; tab.addEventListener(&#x27;click&#x27;, () =&gt; select(tab.dataset.view)));
+    })();
+  &lt;/script&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set([&quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;left&quot;]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =&gt;
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest(&quot;[data-tooltip]&quot;)
+      : null;
+  const containsTarget = (trigger, target) =&gt;
+    target?.nodeType != null &amp;&amp; trigger.contains(target);
+  const getContent = (trigger) =&gt;
+    trigger.getAttribute(&quot;data-tooltip&quot;)?.trim() ?? &quot;&quot;;
+  const getPlacement = (trigger) =&gt; {
+    const placement = trigger.getAttribute(&quot;data-tooltip-placement&quot;);
+    return tooltipPlacements.has(placement) ? placement : &quot;top&quot;;
+  };
+  const getTooltip = () =&gt; {
+    if (tooltip == null) {
+      tooltip = document.createElement(&quot;div&quot;);
+      tooltip.id = tooltipId;
+      tooltip.className = &quot;tooltip&quot;;
+      tooltip.setAttribute(&quot;role&quot;, &quot;tooltip&quot;);
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) =&gt; {
+    const ids = new Set(
+      (trigger.getAttribute(&quot;aria-describedby&quot;) ?? &quot;&quot;)
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute(&quot;aria-describedby&quot;);
+    } else {
+      trigger.setAttribute(&quot;aria-describedby&quot;, [...ids].join(&quot; &quot;));
+    }
+  };
+  const clearOpenTimeout = () =&gt; {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) =&gt; {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) =&gt; {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-width&quot;,
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              &quot;--tooltip-available-height&quot;,
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: &quot;fixed&quot;,
+    })
+      .then(({ x, y }) =&gt; {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = &quot;visible&quot;;
+      })
+      .catch(() =&gt; {
+        if (activeTrigger === trigger &amp;&amp; request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) =&gt; {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = &quot;hidden&quot;;
+    floating.style.transform = &quot;translate(0, 0)&quot;;
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () =&gt; {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) =&gt; {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() &lt; skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() =&gt; {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) =&gt; {
+    if (event.pointerType === &quot;touch&quot;) {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(&quot;:focus-visible&quot;)) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) =&gt; {
+    if (event.key === &quot;Escape&quot;) {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) =&gt; {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () =&gt; {
+    closeTooltip(false);
+    document.removeEventListener(&quot;pointerover&quot;, handlePointerOpen);
+    document.removeEventListener(&quot;pointerout&quot;, handleLeave);
+    document.removeEventListener(&quot;focusin&quot;, handleFocusIn);
+    document.removeEventListener(&quot;focusout&quot;, handleLeave);
+    document.removeEventListener(&quot;keydown&quot;, handleKeyDown);
+    document.removeEventListener(&quot;contextmenu&quot;, handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener(&quot;pointerover&quot;, handlePointerOpen);
+  document.addEventListener(&quot;pointerout&quot;, handleLeave);
+  document.addEventListener(&quot;focusin&quot;, handleFocusIn);
+  document.addEventListener(&quot;focusout&quot;, handleLeave);
+  document.addEventListener(&quot;keydown&quot;, handleKeyDown);
+  document.addEventListener(&quot;contextmenu&quot;, handleContextMenu);
+  window.addEventListener(&quot;pagehide&quot;, destroy, { once: true });
+})();
+&lt;/script&gt;
+&lt;script id=&quot;codex-visualization-lucide&quot; async src=&quot;https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+(() =&gt; {
+  const initialize = () =&gt; {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById(&quot;codex-visualization-lucide&quot;)
+    ?.addEventListener(&quot;load&quot;, initialize, { once: true });
+})();
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+"></iframe>
+</body>
+</html>
